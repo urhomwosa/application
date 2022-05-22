@@ -1,0 +1,14 @@
+# RewriteEngine On
+# RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+# RewriteRule ^ /%1 [NC,L,R]
+
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+
+RewriteEngine On
+RewriteRule ^add-product?$ views/add-product.php
+
+ 
+ 
+
